@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <!--Linking bootstrap-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+
+    <!--Linking fonts-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+
+    <!--Linking google fonts api-->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+
+    <!--Linking css stylesheet-->
     <link rel="stylesheet" href="./assets/style.css" />
 
     <title>Work Day Scheduler</title>
@@ -26,13 +34,14 @@
 
   <body>
 
+    <!--Bootstrap jumbotron header-->
     <header class="jumbotron">
       <h1 class="display-3 text-center">Work Day Scheduler</h1>
       <p class="lead text-center">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead text-center"></p>
     </header>
 
-      <!-- Timeblocks go here -->
+    <!-- Timeblocks go here -->
     <div class="container">
 
       <div class="row time-block" id="9">
@@ -89,9 +98,9 @@
         <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
       </div>
 
-
     </div>
 
+    <!--Linking jQuery, moment.js, and js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/script.js"></script>
