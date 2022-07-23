@@ -1,6 +1,8 @@
+// Uses moment.js to display current date
 var todayDate = moment().format('dddd, MMMM Do YYYY');
 $("#currentDay").text(todayDate);
 
+// Function to display timeblock color based on current hour
 function timeColor() {
     var hour = moment().hour();
 
@@ -15,6 +17,7 @@ function timeColor() {
             $(this).addClass("past");
         }
 
+        // Gets item from local storage so that it displays on page even after refresh
         var savedEvent = localStorage.getItem(currentHour);
         if (savedEvent) {
             $(this).children(".description").val(savedEvent);
@@ -22,6 +25,7 @@ function timeColor() {
     })
 };
 
+// Function to save item to local storage on button click
 var saveButton = $(".saveBtn");
 
 saveButton.on('click', function() {
@@ -31,4 +35,5 @@ saveButton.on('click', function() {
     localStorage.setItem(time, text);
 });
 
+// Calls timeblock color function
 timeColor();
